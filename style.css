@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+/*共通部分
+--------------------------------------------------*/
+html{
+    font-size: 100%;
+}
+body{
+    font-family:"UD Reimin Medium","Hiragino Sans","BIZ UDPGothic";
+    line-height: 1.7;}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+/* レイアウト*/
+.page-index{
+    background-image: url(../image/baseball\(mobile\).jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fffaeb;
+    padding-top: 10rem;
+
+}
+.align-center{
+    text-align: center;
+}
+
+/*見出し*/
+.font-english{
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.page-title{
+    font-size: 2rem;
+    margin: 2rem 2rem -2.5rem 3rem;
+    padding:0
+}
+.page-name{
+    font-size:5rem;
+    text-align: center;
+    padding-top: 0;
+}
+
+.heading{
+    font-size: 2rem;
+    text-align: center;
+    padding: .5rem;
+}
+
+/*ヘッダー
+-------------------------------------------------*/
+.page-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    background-image: 
+    url(../image/header-image.jpg);
+}
+
+.logo{
+    width: 60px;
+    border-radius: 16px;
+}
+
+.main-nav{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+}
+
+.main-nav a{
+    color: #fffaeb;
+}
+
+.main-nav a:hover{
+    color: #600;
+}
+
+/*セクション
+----------------------------------------------------*/
+.profile{
+    padding: 0 1.5rem;
+    margin: 7.5rem auto 1rem;
+}
+.profile p{
+    margin-bottom: 0.5rem;
+}
+
+.profile p a{
+    color: #00aaff;
+}
+
+.profile p a:hover{
+    color: #600;
+}
+
+/*about*/
+.travel{
+    background-image:url(../image/about.travel\(mobile\).jpg);
+    height: 50rem;
+    background-size: cover;
+    color: #000;
+    margin: 5rem 0 0 0;
+}
+.baseball{
+    background-image: url(../image/about.baseball\(mobile\).jpg);
+    background-size: cover;
+    height: 50rem;
+    color: #fffaeb;
+}
+.about-name{
+    font-size:5rem;
+    text-align: center;
+    padding-top:3rem;
+}
+article p{
+    margin: .5rem 3rem;
+}
+
+/*skill*/
+.skill{
+    margin-top: 3rem;
+    background-image: url(../image/skill\(mobile\).jpg);
+    background-size: cover;
+    padding-bottom: 3.5rem;
+}
+.skill-name{
+     font-size:5rem;
+    text-align: center;
+    padding-top:3rem;
+    margin-bottom: -3rem;
+}
+.skill-title{
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+.align-center li{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/*contact*/
+.contact{
+    margin-top: 3rem;
+    background-image: url(../image/skill\(mobile\).jpg);
+    background-size: cover;
+    padding-bottom: 3.5rem;
+}
+.contact-name{
+     font-size:5rem;
+    text-align: center;
+    padding-top:3rem;
+}
+.contact p{
+    margin: .5rem 3rem;
+}
+.btn{
+    display: inline-block;
+    font-size: 2rem;
+    background-color: #0bd;
+    color: #fffaeb;
+    border-radius: 8px;
+    padding: .3rem 1.5rem;
+    margin-top: .5rem;
+}
+.btn:hover{
+    color: #600;
+}
+/*SNS*/
+.sns-item{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+    /*デスクトップ版
+-----------------------------------*/
+@media(min-width:800px){
+.page-index{
+    background-image: url(../image/baseball\(desktop\).jpg);
+    background-size: cover;
+}
+
+/*ヘッダー
+-----------------------------*/
+.logo{
+    width: 90px;
+}
+.main-nav{
+    font-size: 3rem;
+    gap: 4rem;
+}
+
+
+.main-title{
+    margin-top: 5rem;
+    margin-left: 3rem;
+    padding: 0;
+}
+
+/*メインページ*/
+.page-title{
+    font-size: 2.5rem;
+    margin-top: -3rem;
+}
+
+.page-name{
+   font-size: 7rem;
+   text-align: left;
+   margin: -3.5rem 3rem -1.3rem 2rem;  
+}
+
+/*プロフィール*/
+.profile{
+    text-align: left;
+    margin-top: -.5rem;
+}
+.profile p{
+    margin-bottom: 0.3rem;
+}
+.heading{
+    text-align: left;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-left: 15rem;
+}
+
+/*about*/
+.travel{
+    background-image: url(../image/about.travel\(desktop\).jpg);
+    background-size: cover;
+    height: 44rem;
+}
+.baseball{
+    background-image: url(../image/about.baseball\(desktop\).jpg);
+    background-size: cover;
+    height:40rem
+}
+.about-name{
+    padding-top: 7rem;
+}
+
+
+.travel p{
+    text-align: center;
+    font-size: 18px;
+}
+.baseball p{
+    font-size: 18px;
+}
+
+/*skill*/
+.skill{
+    background-image: url(../image/skill\(desktop\).jpg);
+    background-size: cover;
+    margin-top: 5rem;
+}
+.skill-name{
+    margin-bottom:-2rem
+}
+.skill-title{
+    margin-top: 1rem;
+}
+.align-center ul{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    list-style: none;
+}
+
+/*contact*/
+.contact{
+    background-image: url(../image/skill\(desktop\).jpg);
+    background-size: cover;
+    margin-top: 5rem;
+}
+.contact-name{
+    margin-bottom:-2rem
+}
+.contact p{
+    text-align: center;
+    font-size: 18px;
+    margin: 2rem 15rem .5rem;
+}
+
+}
